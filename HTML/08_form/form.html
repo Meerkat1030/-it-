@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 태그</title>
+</head>
+<body>
+    <form action="result.html">
+        <fieldset>
+            <legend>폼요소 그룹명</legend>
+            <table border="1">
+                <tr>
+                    <th>텍스트</th>
+                    <td><input type="text" size="5" maxlength="3"></td>
+                    <!-- size : 글자수만큼의 크기만 보여짐 -->
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td><input type="password" placeholder="숫자와 영문으로 8자 작성하세요!"></td>
+                </tr>
+                <tr>
+                    <th>첨부파일</th>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <th>성별</th>
+                    <td><input name="gender" id="male" type="radio">남자 <input name="gender" id="female" type="radio">여자</td>
+                    <!-- 선택사항 중 한가지만 선택할 경우 사용 -->
+                </tr>
+                <tr>
+                    <th>음악</th>
+                    <td>
+                        <input type="checkbox" name="song" id="ballad">발라드
+                        <input type="checkbox" name="song" id="hiphop">힙합
+                        <input type="checkbox" name="song" id="dance">댄스
+                    </td>
+                </tr>
+                <tr>
+                    <th>버튼</th>
+                    <td>
+                        <input type="submit" value="확인">
+                        <input type="reset" value="취소">
+                        <input type="button" value="버튼">
+                        <button>버튼</button>
+                        <input type="color">
+                        <input type="date">
+                        <input type="range">
+                    </td>
+                    <!-- submit : 확인 전송-->
+                    <!-- reset : 취소, 초기화-->
+                </tr>
+                <tr>
+                    <th>여러줄 글상자</th>
+                    <td><textarea rows="20" cols="50" placeholder="배고파..."></textarea></td>
+                </tr>
+                <tr>
+                    <th>드롭다운메뉴</th>
+                    <td>
+                        <select multiple name="" id="">
+                            <option value="">010</option>
+                            <option value="">011</option>
+                            <option value="">016</option>
+                            <option value="">017</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 태그</title>
+</head>
+<body>
+    <h1>표 태그</h1>
+    <table border="1">
+        <caption>표의 제목</caption><!--테이블 여는 태그 바로 밑에 작성가능-->
+        <tr><!--한행-->
+            <th>첫번째 칸</th><!--th => 제목칸 : 글자가 굵게, 중앙정렬-->
+            <td>두번째 칸</td><!--td => 옆으로 한칸-->
+        </tr>
+        <tr>
+            <td>세번째 칸</td>
+            <td>네번째 칸</td>
+        </tr>
+    </table>
+    <table border="1">
+        <caption>주말 박스 오피스</caption>
+        <tr>
+            <th>순위</th>
+            <th>영화명</th>
+            <th>배급사</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>인셉션</td>
+            <td>워너</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>얼간이들을 위한 만찬</td>
+            <td>파라마운트</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>솔트</td>
+            <td>소니</td>
+        </tr>
+
+    </table>
+    <!--colspan="3" => 좌우칸 3칸 합치기-->
+    <!--rowspan="5" => 상하칸 5칸 합치기-->
+    <!--td와 th에만 적용가능-->
+    <h2>칸 합치기</h2>
+    <table border="1">
+        <tr>
+            <td colspan="2">1-1</td>
+            <!--<td>1-2</td>-->
+        </tr>
+        <tr>
+            <td>2-1</td>
+            <td>2-2</td>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <td rowspan="2">1-1</td>
+            <td>1-2</td>
+        </tr>
+        <tr>
+            <!--<td>2-1</td>-->
+            <td>2-2</td>
+        </tr>
+    </table>
+</body>
+</html>
