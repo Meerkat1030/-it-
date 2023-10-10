@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+body { background: #246575;}
+h1 { background: #856987; font-size: 50px; color: #dd7878;}
+p { height: 200px; width: 50%; background: #ddd; font-size: 30px; color: green;}
