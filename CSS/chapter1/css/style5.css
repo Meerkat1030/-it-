@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+div{
+    width: 1000px;
+    margin: 50px auto;
+}
+h1{
+    background: #CC0000;
+    color: #fff;
+    padding: 10px;
+    padding-left: 20px;
+}
+dl{
+    border: 1px #c00 dashed;
+    padding: 20px;
+    margin: 23px 0 23px 0;
+}
+dt{
+    color: #c00;
+}
+table{
+    border-collapse: collapse;/*표에서 이중선을 단선으로 보이기위한 코드*/
+    border-top: 5px solid #c00;
+    width: 100%;
+}
+th{
+    border: 1px solid #c00;
+    background: #F8E2E4;
+    padding: 10px;
+}
+td{
+    border: 1px solid #c00;
+    padding: 10px;
+    text-align: center;
+}

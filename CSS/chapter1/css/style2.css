@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* 요소 초기화 */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+div{
+    width: 1000px;
+    border: 1px solid #000;
+    margin: 50px auto;
+    padding: 50px;
+}
+h1{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+p{
+    color: #f00;
+    padding: 20px 0;
+}
+ul{
+    background: #ddd;
+    padding: 20px 40px;
+}
+h2{
+    border-left: 5px solid #000;
+    padding: 0 0 0 20px;
+    margin: 20px 0;
+}
+dl{
+    border: 1px solid #999;
+    padding: 20px;
+}
+dt{
+    background: #999;
+    color: #fff;
+    padding: 5px;
+}
+dd{
+    padding: 5px 50px;
+}
+ol{
+    border: 1px dashed #999;
+    padding: 20px 40px;
+}

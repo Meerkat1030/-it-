@@ -1,5 +1,5 @@
 @charset "utf-8";
 
-body { background: #246575;}
-h1 { background: #856987; font-size: 50px; color: #dd7878;}
-p { height: 200px; width: 50%; background: #ddd; font-size: 30px; color: green;}
+body { background: #000;}
+h1 { background: #ff0; font-size: 50px; color: #ff0000;}
+p { border-bottom: #ff0 dotted 5px; border-top:#f00 10px double; padding:100px 50px 0 200px; margin:100px 200px 300px; height: 200px; width: 50%; background: #ddd; font-size: 30px; color: green;}

@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* 요소 초기화 */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+div { 
+    padding: 50px; 
+    width: 800px; 
+    border: double #FF6600 5px;
+    margin: 50px auto;
+}
+h1 { 
+    margin:0; 
+    padding: 20px; 
+    text-align: center; 
+    background: #FF6600; 
+    color: #fff; }
+p{
+    padding: 20px 0px;
+}
+h2 { 
+    color: #FF6600;
+    padding: 0 0 20px;
+}
+ul { 
+    background: #DDDDDD;
+    width: 300px;
+    padding: 20px 40px;
+    margin: 0 0 20px;
+}
+ol { 
+    border: 1px #FF6600 dashed;
+    padding: 20px 40px;
+}
