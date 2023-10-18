@@ -1,0 +1,193 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;200;400;517;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 100%;
+}
+img{
+    vertical-align: top;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+em,address{
+    font-style: normal;
+}
+body{
+    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 100%;
+    line-height: 1.6;
+    color: #333;
+    word-break: keep-all
+}
+
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+#header{
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+}
+#header .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .gnb{
+    display:flex;
+}
+#header h1 img {
+    display: block;
+}
+
+#header .gnb li {
+    display: inline-block;
+}
+#header .gnb li a{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 30px;
+    transition: all 0.5s;
+}
+#header .gnb li a:hover,
+#header .gnb li .on {
+    color: #1B9C9E;
+}
+#container .sub_visual{
+    background: url('../images/pattern.jpg') no-repeat center 0;
+    padding: 150px 0 100px;
+    text-align: center;
+}
+#container .inner h2{
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #1B9C9E;
+    padding-bottom: 20px;
+}
+#container .main {
+    padding: 100px 0 150px;
+}
+#container .main h3 {
+    font-size: 40px;
+    text-align: center;
+}
+#container .comment{
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0 50px;
+    color: #999;
+}
+#container .main .intro {
+    position: relative;
+}
+#container .main .intro h4 {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 450px;
+    background: #000;
+    padding: 40px;
+    color: #fff;
+    font-size: 30px;
+}
+#container .main .intro p{
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    width: 900px;
+    background: #fff;
+    padding: 40px;
+}
+#container .main .tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 100px;
+}
+#container .main .tech li {
+    width: calc((100% - 100px)/3);
+    text-align: center;
+    position: relative;
+}
+#container .main .tech li img{
+    max-width: 100%;
+}
+#container .main .tech li h4 {
+    font-size: 20px;
+    background: #1B9C9E;
+    color: #fff;
+    padding: 20px 0;
+}
+#container .main .tech li .over {
+    transition: all 0.5s;
+    font-size: 18px;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 100px 50px;
+}
+#container .main .tech li:hover .over {
+    opacity: 1;
+}
+
+
+#footer {
+    background: #333;
+    padding: 100px 0;
+    color: #fff;
+}
+
+#footer .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer address {
+    opacity: 0.3;
+    padding: 30px 0 0;
+}
+
+#footer address span {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#footer .copy {
+    opacity: 0.2;
+    text-transform: uppercase;
+}
+
+#footer .sns {
+    display: flex;
+    gap: 10px;
+}
+
+
+.search {
+    position: fixed;
+    right: 0;
+    top: 50%;
+}

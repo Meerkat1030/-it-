@@ -32,81 +32,107 @@ body{
     color: #333;
     word-break: keep-all
 }
-/* 디폴트로 들어가는 a태그의 하이퍼링크 밑줄과 글자색 바꾸는 코드 */
-header{
-    background: #F1F8FD;
-    border-bottom: 20px solid #DBEAF5;
+#header{
+    border-bottom: 1px solid rgba(0,0,0,0.5);
 }
 #header .inner{
     width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    /* 오른쪽 왼쪽 요소 위치 띄우기 */
     align-items: center;
-    /* 요소들 중앙 정렬 */
-    padding: 30px 0;
+    padding: 20px 0;
 }
-#header .gnb li{
-    display: inline-block;
+#header .gnb{
+    display: flex;
 }
 #header .gnb li a{
     display: block;
     font-size: 20px;
-    font-weight: 700px;
+    font-weight: 700;
     padding: 10px 30px;
     transition: all 0.5s;
 }
 #header .gnb li a:hover{
-    color: #2082EF;
+    color: #008944;
 }
 #container{
     width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    /* lnb와 contents사이의 50px를 오른쪽에서 사이로 낑구는 코드 */
-    padding: 100px;
+    padding: 100px 0;
 }
 .lnb{
     width: 250px;
 }
 .lnb h2{
-    padding-bottom: 50px;
-    padding-top: 10px;
+    padding: 10px 0 30px;
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 3px solid #000
+    ;
 }
 .lnb ul li a{
     display: block;
-    border: 1px solid #B2D3B9;
-    padding: 10px 20px;
+    border-bottom: 1px solid #DDDDDD;
     font-weight: 700;
-    margin-bottom: 5px;
-    background: url('../images/lnb_bg.png') no-repeat right 20px center;
-    transition: background-color 0.5s, padding 0.5s, color 0.5s;
-    /* transition을 다중으로 주고 싶을땐 ,로 구분하면된다. */
+    padding: 10px 20px;
+    transition: all 0.5s;
 }
 .lnb ul li a:hover{
-    background: #006E18 url(../images/lnb_bg.png) no-repeat 20px center;
+    background: #006E18;
     color: #fff;
-    padding: 10px 20px 10px 40px;
 }
+/* .lnb ul li:last-child{
+    border: 5px solid red;
+} */
 .contents{
     width: calc(100% - 300px);
-    background: url(../images/greetings_img.png)
-    no-repeat right 200px;
 }
 .contents h3{
-    font-size:  30px;
-    border-bottom: 3px solid #000;
-    padding: 0 0 30px;
+    font-size: 50px;
+    font-weight: 700;
 }
 .contents p{
     padding: 50px 0 0;
 }
-#footer{
-    background: #333;
-    color: #fff;
+.contents .p1{
+    font-size: 20px;
+    font-weight: 700;
+}
+.contents .s1{
+    color: #0074AA;
+}
+.contents .social{
     display: flex;
+    text-align: center;
+    /*margin: 0 auto;
+    justify-content: space-between;
+    align-items: center; */
+    gap: 20px;
+}
+.social dl{
+    width: calc((100% - 40px) / 3);
+}
+.social dt{
+    background: #7E5300;
+    color: #fff;
+}
+.social img{
+    width: 100%;
+}
+.social dl dd:nth-of-type(2){
+    padding: 10px 0;
+}
+.social dl dt:nth-child(1){
+    padding : 10px 0;
+}
+.social dl dt{
+    margin-top: 40px;
+}
+#footer{
+    border-top: 1px solid #000;
     padding: 50px 0 100px;
 }
 #footer .inner{
@@ -115,9 +141,9 @@ header{
     display: flex;
     justify-content: space-between;
 }
-#footer .footer_txt{
-    text-align: right;
+.footer_txt .p2{
+    color : #ddd;
 }
-#footer address span{
-    color: #689052;
+.footer_txt .s2{
+    color: #F26522;
 }
