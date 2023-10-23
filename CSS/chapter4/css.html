@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        @keyframes txt_ani{
+            /* 동작시작 */
+            0%{
+                opacity: 1;
+            }
+            /* 동작중간 */
+            40.5%{
+
+            }
+            /* 동작중간 */
+            50%{
+
+            }
+            /* 동작종료 */
+            100%{
+                opacity: 0;
+            }
+        }
+        div{
+            width: 400px;
+            height: 400px;
+            background: pink;
+            margin: 100px auto;
+            border-radius: 30px;
+            box-shadow: inset 5px 5px 50px rgba(255,0,0,0.5);
+            text-shadow: 5px 5px 0 #00f;
+            transform: skew(10deg,20deg);
+            animation: txt_ani 5s;
+        }
+    </style>
+</head>
+<body>
+    <div>부산IT교육센터</div>
+</body>
+</html>
