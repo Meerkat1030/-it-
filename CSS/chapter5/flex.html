@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        section{
+            border: 1px solid #000;
+            display: flex;
+            /* flex-direction: row; */
+            /* justify-content: space-evenly; */
+            height: 900px;
+            /* align-items: flex-start;
+            flex-wrap: wrap;
+            align-content: space-between; */
+            flex-direction: column;
+        }
+        div{
+            border: 1px solid #f00;
+            /* padding: 100px; */
+            /* width: 800px; */
+            /* flex-grow: 1;
+            flex-shrink: 1;
+            width: 400px; */
+            flex: 0 1 200px;
+        }
+        /* div:nth-child(1){
+            order: 2;
+            align-self: flex-start;
+        }*/
+        /* div:nth-child(2){
+            order: 3;
+            align-self: flex-end;
+        } */
+        /*div:nth-child(3){
+            order: 1;
+        } */
+    </style>
+</head>
+<body>
+    <section>
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+    </section>
+</body>
+</html>

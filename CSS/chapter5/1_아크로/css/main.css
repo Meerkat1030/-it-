@@ -1,0 +1,562 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Noto Sans KR', sans-serif;
+font-family: 'DM Serif Text', serif; */
+
+/* 초기화 */
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+img {
+    vertical-align: top;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+em,
+address {
+    font-style: normal;
+}
+
+button {
+    border: 0;
+    background: transparent;
+}
+
+/* 버튼 보더 배경 지우기 */
+
+/* form 테두리 영역 없애기 */
+fieldset,
+input,
+textarea,
+select {
+    vertical-align: middle;
+    border: 0;
+}
+
+legend,
+caption {
+    display: none;
+}
+
+
+body {
+    word-break: keep-all;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #000;
+}
+
+.inner {
+    max-width: calc(100% - 200px);
+    margin: 0 auto;
+}
+
+
+/* css 초기값 E */
+
+
+@media (max-width : 1600px) {
+    .inner {
+        max-width: calc(100% - 160px);
+    }
+}
+
+@media (max-width : 1400px) {
+    .inner {
+        max-width: calc(100% - 140px);
+    }
+}
+
+@media (max-width : 1200px) {
+    .inner {
+        max-width: calc(100% - 120px);
+    }
+}
+
+@media (max-width : 1000px) {
+    .inner {
+        max-width: calc(100% - 100px);
+    }
+}
+
+@media (max-width : 768px) {
+    .inner {
+        max-width: calc(100% - 50px);
+    }
+}
+
+
+#wrap {
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* 인터넷창 x축 스크롤바 */
+
+
+/* header */
+
+#header {
+    border-bottom: 1px solid #ebebeb;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.8);
+    z-index: 999;
+}
+
+#header .inner {
+    height: 73px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .inner h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 26px;
+}
+
+#header .gnb {
+    display: flex;
+}
+
+#header .gnb>li>a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+#header .gnb>li>a:after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #000;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    transition: all 0.5s;
+}
+#header .gnb>li:hover >a:after{
+    width: 100%;
+}
+
+#header .gnb > li {
+    position: relative;
+}
+#header .gnb > li .depth2 {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    display: none;
+    width: 500px;
+
+}
+#header .gnb > li:hover .depth2{
+    display: block;
+}
+#header .gnb > li .depth2 li{
+    display: inline-block;
+}
+#header .gnb > li .depth2 li a {
+    display: block;
+    padding: 20px;
+}
+
+/* 모바일 메뉴 버튼 */
+#header .ham {
+    width: 24px;
+    height: 24px;
+    background: url(../images/ham.svg) no-repeat center;
+    cursor: pointer;
+    text-indent: -99999px;
+    display: none;
+}
+
+
+#header .util {
+    display: flex;
+    gap: 20px;
+}
+
+#header .util .btn_search {
+    width: 24px;
+    height: 24px;
+    background: url(../images/search.svg) no-repeat center;
+    color: transparent;
+    cursor: pointer;
+}
+
+/* 검색버튼 꾸미기 */
+
+/* 화면 줄어들면 모바일 메뉴 활성화 */
+@media (max-width:1200px) {
+    #header .ham {
+        display: block;
+    }
+
+    #header .gnb {
+        display: none;
+    }
+
+    #header .util li:not(:last-child) {
+        display: none;
+    }
+}
+
+/* 글자 노출 안되게 하는 방법들
+font-size : 0 / color: transparent / text-indent :-9999 */
+
+#main{
+    padding-top: 73px;
+}
+
+#main section {
+    padding: 100px 0;
+}
+
+#main h2 {
+    font-size: 5rem;
+}
+
+#main h2+p {
+    padding: 20px 0;
+    font-size: 2.4rem;
+    color: #999;
+}
+
+#main .btn_more a {
+    border-bottom: 1px solid #ccc;
+    color: #999;
+    font-weight: 700;
+}
+
+@media (max-width:1200px) {
+    #main section {
+        padding: 80px 0;
+    }
+
+    #main h2 {
+        font-size: 4rem;
+    }
+
+    #main h2+p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    #main section {
+        padding: 60px 0;
+    }
+
+    #main h2 {
+        font-size: 3rem;
+    }
+
+    #main h2+p {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* sec1 */
+
+#sec1 {
+    padding: 100px 0;
+    text-align: center;
+}
+
+#sec1 h2 {
+    font-family: 'DM Serif Text', serif;
+    font-size: 8rem;
+    font-weight: 400;
+}
+
+#sec1 h2+p {
+    padding: 20px 0;
+    font-size: 2.4rem;
+    color: #999;
+    letter-spacing: -1px;
+}
+
+#sec1 img {
+    max-width: 100%;
+}
+
+@media (max-width:1200px) {
+    #sec1 h2 {
+        font-size: 6rem;
+    }
+
+    #sec1 h2+p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    #sec1 h2 {
+        font-size: 4rem;
+    }
+
+    #sec1 h2+p {
+        font-size: 1.6rem;
+    }
+}
+
+/* sec2 */
+
+#sec2 {
+    position: relative;
+    padding: 100px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #999;
+}
+
+#sec2::before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    background: #ddd;
+}
+
+#sec2 .inner {
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec2 .inner>* {
+    width: calc((100% - 200px) / 2);
+}
+
+#sec2 .txt {
+    text-align: center;
+}
+
+#sec2 img {
+    max-width: 100%;
+}
+
+@media (max-width : 1200px) {
+    #sec2 .inner>* {
+        width: 100%;
+    }
+
+    #sec2::before {
+        display: none;
+    }
+
+}
+
+
+
+/* sec3 */
+
+#sec3 {
+    text-align: center;
+}
+
+#sec3 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec3 ul li {
+    position: relative;
+    width: calc(100% - 90px) / 4;
+}
+
+#sec3 ul li img {
+    max-width: 100%;
+}
+
+#sec3 ul li span {
+    padding: 10px 20px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    color: #fff;
+}
+
+#sec3 br {
+    display: none;
+}
+
+
+@media (max-width:1200px) {
+    #sec3 ul li {
+        width: calc(100% - 30px) / 2;
+    }
+
+    #sec3 ul li:nth-child(n+3) {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    #sec3 br {
+        display: block;
+    }
+
+    #sec3 ul li {
+        width: 100%;
+    }
+
+    #sec3 ul li:not(:first-child) {
+        display: none;
+    }
+}
+
+
+
+.txt_center {
+    text-align: center;
+}
+
+/* 클래스 선언 */
+
+/* sec4 */
+
+
+#sec4 {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+#sec4 ul {
+    display: flex;
+    justify-content: center;
+}
+
+#sec4 ul li {
+    width: calc(100% / 4);
+}
+
+#sec4 ul li img {
+    max-width: 100%;
+}
+
+
+
+/* footer */
+
+#footer {
+    padding: 100px 0;
+}
+
+#footer .serach {
+    display: flex;
+    justify-content: center;
+}
+
+#footer input[type="text"] {
+    padding: 0 10px;
+    font-size: 1.6rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 220px;
+    height: 40px;
+    border: 1px solid #333;
+}
+
+#footer input::placeholder {
+    color: #ccc;
+}
+
+#footer input[type="submit"] {
+    font-size: 1.6rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 80px;
+    height: 40px;
+    background: #333;
+    color: #fff;
+}
+
+#footer address {
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    color: #999;
+}
+
+#footer .copy {
+    color: #999;
+    padding-bottom: 50px;
+}
+
+#footer .footer_logo {
+    position: relative;
+    padding-top: 20px;
+}
+
+#footer .footer_logo::before {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: #ccc;
+}
+
+
+@media (max-width:768px) {
+    #footer {
+        font-size: 1.4rem;
+    }
+
+    #footer address {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

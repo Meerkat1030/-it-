@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어쿼리</title>
+    <style>
+        html {
+            font-size: 10px;
+        }
+        body{
+            background: #ff0;
+        }
+        @media all and (max-width:1600px){
+            body{background: #f00;}
+        }
+        @media all and (max-width:1400px){
+            body{background: #00f;}
+        }
+        div {
+            font-size: 50px;
+        }
+        div p:nth-child(1) {
+            font-size: 1em; /*부모요소 기준*/
+        }
+        div p:nth-child(2) {
+            font-size: 1rem; /*html폰트사이즈 기준*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>부산IT교육센터</p>
+        <p>부산IT교육센터</p>
+    </div>
+</body>
+</html>

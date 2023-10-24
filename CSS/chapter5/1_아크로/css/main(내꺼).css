@@ -1,0 +1,429 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+html{
+    font-size: 62.5%;
+    /* 10px */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+img {
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+address,
+em {
+    font-style: normal;
+}
+
+
+/* 공통사항 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #000;
+}
+
+#wrap {
+    min-width: 1200px;
+    overflow-x: hidden;
+    background: url('../images/main_bg.png') no-repeat center top;
+}
+
+.inner {
+    max-width: calc(100% - 200px);
+    margin: 0 auto;
+}
+button{
+    border: 0;
+    background: transparent;
+}
+fieldset, input, textarea, select {
+    vertical-align: middle;
+    border: 0;
+}
+legend, caption {
+    display: none;
+}
+/* 초기화요소 끝!!! */
+
+@media(max-width:1600px){
+    .inner {
+        max-width: calc(100% - 160px);
+    }
+}
+@media(max-width:1400px){
+    .inner {
+        max-width: calc(100% - 140px);
+    }
+}
+@media(max-width:1200px){
+    .inner {
+        max-width: calc(100% - 120px);
+    }
+}
+@media(max-width:1000px){
+    .inner {
+        max-width: calc(100% - 100px);
+    }
+}
+@media(max-width:768px){
+    .inner {
+        max-width: calc(100% - 50px);
+    }
+}
+/* 창크기에 따라 여백 조절해주는 코드 */
+
+
+/* header */
+#header {
+    border-bottom: 1px solid #999;
+}
+#header .inner {
+    display: flex;
+    justify-content: space-between;
+    /* 주축에 기준한 배치 */
+    position: relative;
+    /* #header h1에서 position: absolute를 사용하기 위해 부모태그에 선언*/
+    align-items: center;
+    /* .gnb와 .util의 중앙정렬을 위한 코드 */
+    height: 73px;
+}
+#header h1 {
+    position: absolute;
+    left: 50%;
+    top: 28px;
+    transform: translateX(-50%);
+    /* 중앙에 배치하고 싶은데 크기를 모를때 절반의 위치에서 오른쪽으로 절반만더 이동 */
+}
+#header .gnb {
+    display: flex;
+}
+#header .gnb > li > a {
+    display: block;
+    /* padding공간을 잡기위해 블럭으로 선언 */
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+#header .ham{
+    width: 24px;
+    height: 24px;
+    background: url('../images/ham.svg') no-repeat center;
+    cursor: pointer;
+    text-indent: -9999px;
+    display: none;
+}
+
+#header .util {
+    display: flex;
+    gap: 20px;
+}
+#header .util .btn_search {
+    background: url('../images/search.svg')
+    no-repeat center;
+    /* 이미지가 반복안되고 센터에 위치하게 */
+    width: 24px;
+    height: 24px;
+    /* color: transparent; */
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+@media (max-width:1200px){
+    #header .ham{
+        display: block;
+    }
+    #header .gnb{
+        display: none;
+    }
+    #header .util li:not(:last-child){
+        display: none;
+    }
+}
+
+
+#main section {
+    padding: 100px 0;
+}
+#main h2{
+    font-size: 5rem;
+}
+#main h2+p{
+    font-size: 2.4rem;
+    color: #999;
+    padding: 20px 0;
+}
+#main .btn_more a {
+    border-bottom: 1px solid #ccc;
+    color: #999;
+    font-weight: 700;
+}
+
+@media (max-width:1200px){
+    #main h2{
+        font-size: 4rem;
+    }
+    #main h2+p {
+        font-size: 2rem;
+    }
+}
+@media (max-width:768px){
+    #main h2{
+        font-size: 3rem;
+    }
+    #main h2+p {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* sec1 */
+#sec1 {
+    text-align: center;
+    padding: 100px 0;
+}
+#sec1 h2{
+    font-family: 'DM Serif Text', serif;
+    font-size: 8rem;
+    font-weight: 700;
+}
+#sec1 h2+p{
+    padding: 20px 0;
+    font-size: 2.4rem;
+    color: #999;
+    letter-spacing: -1px;
+}
+#sec1 img{
+    max-width: 100%;
+}
+
+@media (max-width:1200px){
+    #sec1 h2{
+        font-size: 6rem;
+    }
+    #sec1 h2+p {
+        font-size: 2rem;
+    }
+}
+@media (max-width:768px){
+    #sec1 h2{
+        font-size: 4rem;
+    }
+    #sec1 h2+p {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* sec2 */
+#sec2 {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 100px 0;
+    position: relative;
+}
+#sec2 .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#sec2 ::before{
+    content: "";
+    /* 필수로 들어가야함 */
+    width: 1px;
+    height: 100%;
+    display: block;
+    background: #ccc;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+#sec2 .inner > * { /*inner안에 있는 모든 요소*/
+    width: calc((100% - 200px) / 2);
+}
+#sec2 .txt {
+    text-align: center;
+}
+#sec2 img {
+    max-width: 100%;
+    width: 100%;
+}
+@media (max-width:1200px) {
+    #sec2 .inner>* { /*inner안에 있는 모든 요소*/
+        width: 100%
+    }
+    #sec2 ::before {
+        display: none;
+    }
+}
+
+/* sec3 */
+#sec3 {
+    text-align: center;
+}
+#sec3 ul {
+    display: flex;
+    justify-content: space-between;
+}
+#sec3 ul li {
+    width: calc((100% - 90px) / 4);
+    position: relative;
+}
+#sec3 ul li img {
+    max-width: 100%;
+}
+#sec3 ul li span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+}
+#sec3 br {
+    display: none;
+}
+
+@media (max-width:1200px){
+    #sec3 ul li:nth-child(n+3){
+        display: none;
+    }
+    #sec3 ul li {
+        width: calc((100% - 30px) / 2);
+        position: relative;
+    }
+}
+@media (max-width:768px){
+    #sec3 ul li:nth-child(n+2){
+        display: none;
+    }
+    #sec3 ul li:not(:first-child) {
+        width: 100%;
+        position: relative;
+    }
+    #sec3 br {
+        display: none;
+    }
+    
+}
+
+.txt_center{
+    text-align: center;
+}
+/* sec4 */
+#sec4 {
+    /* text-align: center; */
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 100px 0;
+}
+#sec4 ul {
+    display: flex;
+    justify-content: space-between;
+}
+#sec4 ul li {
+    width: calc(100% / 4);
+}
+#sec4 ul li img {
+    max-width: 100%;
+}
+
+
+/* footer */
+#footer{
+    padding: 100px 0;
+    
+}
+#footer .search{
+    display: flex;
+    justify-content: center;
+}
+#footer input[type="text"] {
+    border: 1px solid #333;
+    width: 220px;
+    height: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.6rem;
+    padding: 0 10px;
+}
+#footer input ::placeholder {
+    color : #ccc;
+}
+#footer input[type="submit"] {
+    background: #333;
+    color: #fff;
+    width: 80px;
+    height: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.6rem;
+}
+#footer address {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    color: #999;
+    padding: 20px 0;
+}
+#footer .copy{
+    color: #999;
+    padding-bottom: 50px;
+}
+#footer .footer_logo {
+    position: relative;
+    padding-top: 20px;
+}
+#footer .footer_logo:before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 작대기 크기의 절반만큼 가도록 선언 */
+}
+
+@media (max-width:768px){
+    #footer address{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #footer{
+        font-size: 1.4rem;
+    }
+}

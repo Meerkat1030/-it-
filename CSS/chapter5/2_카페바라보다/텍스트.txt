@@ -1,0 +1,101 @@
+바라보다
+
+<ul class="gnb">
+    <li><a href="#">바라보다</a>
+        <ul class="depth2">
+            <li><a href="#">소개</a></li>
+            <li><a href="#">메뉴안내</a></li>
+        </ul>
+    </li>
+    <li><a href="#">만나다</a>
+        <ul class="depth2">
+            <li><a href="#">오시는길</a></li>
+        </ul>
+    </li>
+    <li><a href="#">쇼핑하다</a>
+        <ul class="depth2">
+            <li><a href="#">스페셜티</a></li>
+            <li><a href="#">선물세트</a></li>
+            <li><a href="#">커피용품</a></li>
+            <li><a href="#">커피백</a></li>
+        </ul>
+    </li>
+    <li><a href="#">마주보다</a>
+        <ul class="depth2">
+            <li><a href="#">매거진</a></li>
+            <li><a href="#">질문과 답변</a></li>
+            <li><a href="#">구매후기</a></li>
+        </ul>
+    </li>
+    <li><a href="#">정기배송</a></li>
+    <li><a href="#">공지사항</a></li>
+    <li><a href="#">이벤트</a></li>
+</ul>
+
+
+마이페이지
+장바구니
+검색
+
+
+사람과 기억 그리고 커피
+모두가 추억이 되는 그 곳, 바라보다
+Baraboda Coffee and Roaster
+
+
+Baraboda Brand Story
+사람과 기억
+그리고 커피, 모두가
+추억이 되는 곳
+
+커피와 일상이 만나는 방법에 대해 오랫동안 고민해 온 우리는
+2016년 어느 날, 나무가 있고 바람이 기분좋게 부는 곳에서 시작되었습니다.
+그리고 더 가까이에서 바라보기 위해 바라보다 스페셜티를 온라인에서 선보입니다.
+처음 시작했던 설레는 그 마음을 담아 오늘도 당신을 만나러 갑니다.
+
+
+MEET BARABODA
+카페 바라보다의 위치를 확인하세요.
+view more
+
+BARABODA AT HOME
+바라보다의 스페셜티를 이제 홈카페에서 즐겨보세요.
+view more
+
+MORE SPECIAL
+스페셜티를 더 스페셜하게 맞춤 로스팅 해드립니다.
+view more
+
+
+Baraboda Specialty Coffee
+커피를 바라보다
+'바라보다'가 제공하는 좋은 원두가 아름다운 공간에서
+향기로운 커피 한잔과 함께 당신에게 소중한 추억이 될 수 있기를 바라봅니다.
+view more
+
+에티오피아 예가체프
+13,000원
+
+과테말라 와이칸
+13,000원
+
+인도네시아 수마트라
+13,000원
+
+콜롬비아 수프리모
+13,000원
+
+
+Baraboda Coffee Review
+마주보다
+우리는 커피를 사랑하는 사람들과 함께 성장합니다.
+바라보다와 함께한 당신의 이야기를 들려주세요.
+view more
+
+
+상호명 주식회사 미스터콩
+주소 경기도 남양주시 진건읍 진건우회로 19번길 11 미스터콩
+대표자 권영석 사업자등록번호 120-87-97585 고객센터 031-575-1171
+Copyright © 2020 바라보다. All rights reserved.
+
+
